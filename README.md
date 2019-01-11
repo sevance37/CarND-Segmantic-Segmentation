@@ -2,7 +2,7 @@
 
 The goal of this project is to label the pixels of the road using a Fully Convolutional Network (FCN). An example image where the road pixels are overlayed on the image is shown below.
 
-<img src="output_images/um_000057.png" width="500px" align="left"/>
+<img src="output_images/um_000057.png" width="100%" align="center"/>
 
 
 ## Approach
@@ -36,6 +36,6 @@ During training, the average loss per batch for is shown for several epochs in t
 ## Results
 Examples from this model are shown below where the identified road pixels are overlayed in green.
 
-<img src="output_images/um_000035.png" width="500px" align="left"/>
-<img src="output_images/umm_000042.png" width="500px" align="left"/>
-<img src="output_images/uu_000031.png" width="500px" align="left"/>
+<img src="output_images/um_000035.png" width="90%" align="center"/>
+<img src="output_images/umm_000042.png" width="90%" align="center"/>
+<img src="output_images/uu_000031.png" width="90%" align="center"/>
