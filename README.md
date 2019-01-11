@@ -2,7 +2,8 @@
 
 The goal of this project is to label the pixels of the road using a Fully Convolutional Network (FCN). An example image where the road pixels are overlayed on the image is shown below.
 
-<img src="output_images/uu_000057.jpg" width="100px" align="left"/>
+<img src="output_images/um_000057.png" width="500px" align="left"/>
+
 
 ## Approach
 A Fully Convoluational Network (FCN) is created following the approach in the paper ["Fully Convoluational Netowrks for Semantic Segmantation"](https://arxiv.org/abs/1605.06211) by E. Shelhamer, J. Long and T. Darrell.  
@@ -34,6 +35,7 @@ During training, the average loss per batch for is shown for several epochs in t
 
 ## Results
 Examples from this model are shown below where the identified road pixels are overlayed in green.
-<img src="writeup_images/example_sign.jpg" width="100px" align="left"/>
 
-
+<img src="output_images/um_000035.png" width="500px" align="left"/>
+<img src="output_images/umm_000042.png" width="500px" align="left"/>
+<img src="output_images/uu_000031.png" width="500px" align="left"/>
