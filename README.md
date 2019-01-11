@@ -1,16 +1,16 @@
 # CarND-Segmantic-Segmentation
 
-The goal of this project is to label the pixels of the road using a Fully Convolutional Network (FCN). An example image where the road pixels are overlayed on the image is shown below.
+The goal of this project is to label the pixels of the road using a Fully Convolutional Network (FCN). An example of the identified road is shown below. 
 
 <img src="output_images/um_000057.png" width="100%" align="center"/>
 
 
 ## Approach
-A Fully Convoluational Network (FCN) is created following the approach in the paper ["Fully Convoluational Netowrks for Semantic Segmantation"](https://arxiv.org/abs/1605.06211) by E. Shelhamer, J. Long and T. Darrell.  
+A Fully Convolutional Network (FCN) is created following the approach in the paper ["Fully Convolutional Networks for Semantic Segmentation"](https://arxiv.org/abs/1605.06211) by E. Shelhamer, J. Long and T. Darrell.  
 
-The architecture of this FCN starts with a pre-trained, fully convolution version of VGG-16 model. A 1x1 convolution with 2 filters (road and not-road) is then performed on Layer 7. This 1x1 convolution is then upsampled and added to a 1x1 convolution of Layer 4. This combination of Layers 7 and 4 is then upsampled and added to a 1x1 convolution of Layer 3. The resulting combination of Layers 7, 4 and 3 is then upsampled again creating the final layer. A truncated normal kernal initializer and a L2 kernal regularizer was used in each 1x1 convolution and transpose.
+The architecture of this FCN starts with a pre-trained, fully convolution version of VGG-16 model. A 1x1 convolution with 2 filters (road and not-road) is then performed on Layer 7. This 1x1 convolution is then up-sampled and added to a 1x1 convolution of Layer 4. This combination of Layers 7 and 4 is then up-sampled and added to a 1x1 convolution of Layer 3. The resulting combination of Layers 7, 4 and 3 is then up-sampled again creating the final layer. A truncated normal kernel initializer and a L2 kernel regularizer was used in each 1x1 convolution and transpose.
 
-The Adams optimizer with a cross entropy loss function that included losses from regularization was used to train the model on the Kitti Road dataset.
+The Adams optimizer with a cross entropy loss function that included losses from regularization was used to train the model on the Kitti Road data set.
 
 The hyperparameter space was explored and the best values found were:
 
